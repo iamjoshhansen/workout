@@ -2,21 +2,27 @@
   "name": "Workout",
   "version": "0.1.0",
   "author": "Joshua Hansen",
-  "description": "SPA for recording workouts",
+  "license": "LicenseRef-LICENSE",
+  "description": "SPA for tracking workout events",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamjoshhansen/workout.git"
+  },
   "devDependencies": {
-	"grunt": "~0.4.1",
-
-	"webpack": "^1.13.2",
-	"webpack-dev-server": "^1.15.0",
-	"grunt-webpack": "^1.0.14",
-	"json-loader": "^0.5.4",
-	"html-loader": "^0.4.0",
-	"css-loader": "^0.17.0",
-	"sass-loader": "^3.1.2",
-	"style-loader": "^0.12.3",
-	"extract-text-webpack-plugin": "^0.8.2",
-
-	"grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.8.0"
+    "css-loader": "^0.17.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-notify": "^0.4.1",
+    "grunt-webpack": "^1.0.14",
+    "html-loader": "^0.4.0",
+    "json-loader": "^0.5.4",
+    "load-grunt-config": "^0.17.1",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.12.3",
+    "time-grunt": "^1.4.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
   }
 }

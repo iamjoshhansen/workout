@@ -1,0 +1,9 @@
+{
+    "name":         "workout",
+    "cwd":          "./",
+    "build_dir":    "build",
+    "doc_dir":      "docs",
+    "grunt_dir":    "grunt",
+    "source_dir":   "src",
+    "test_dir":     "test"
+}
