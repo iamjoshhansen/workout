@@ -2,10 +2,19 @@
 
 var workout = {};
 
-workout.VERSION = require('./version.json');
+window.workout = workout;
+// module.exports = workout;
 
-workout.doSomethingCool = require('./something-cool.js');
+/*	Make lodash templates use mustache style
+------------------------------------------*/
+	_.templateSettings = {
+		evaluate:    /\{\[([\s\S]+?)\]\}/g,
+		interpolate: /{{([\s\S]+?)}}/g,
+		escape:      /{{{([\s\S]+?)}}}/g
+	};
 
-require('./app.scss');
+workout.VERSION = _.template('{{major}}.{{minor}}.{{patch}}')(require('./version.json'));
 
-workout.template = require('./something-cool.html');
+require('./workout.scss');
+
+require('./js/start.js');

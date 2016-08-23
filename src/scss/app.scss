@@ -1,0 +1,28 @@
+body {
+	font-size: 200%; // master font size controller
+
+	$background: #101010;
+	$color: #01f72c;
+
+	background: $background;
+	color: $color;
+
+	$background_selection: darken($color, 5%);
+	$color_selection: lighten($background, 10%);
+
+	::-moz-selection {
+		background: $background_selection;
+		color: $color_selection;
+	}
+	::selection {
+		background: $background_selection;
+		color: $color_selection;
+	}
+
+	font-family: 'Share Tech Mono', monospace;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+}
