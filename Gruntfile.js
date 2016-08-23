@@ -26,8 +26,6 @@ module.exports = function (grunt) {
 		'sftp-deploy:iamjoshhansen'
 	]);
 
-	console.log(JSON.stringify(config['sftp-deploy'].iamjoshhansen, null, 4));
-
 	grunt.initConfig(config);
 
 };
