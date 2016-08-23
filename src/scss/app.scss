@@ -1,8 +1,8 @@
+$background: #101010;
+$color: #01f72c;
+
 body {
 	font-size: 200%; // master font size controller
-
-	$background: #101010;
-	$color: #01f72c;
 
 	background: $background;
 	color: $color;
@@ -20,9 +20,34 @@ body {
 	}
 
 	font-family: 'Share Tech Mono', monospace;
+
+	padding: 10px;
+	max-width: 1004px;
+	margin: 0 auto;
+}
+
+a {
+	color: $color;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
+}
+
+section {
+	margin: 0 0 1em;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: right;
+}
+
+.loading {
+	text-align: center;
+	margin: 3em 0;
 }
